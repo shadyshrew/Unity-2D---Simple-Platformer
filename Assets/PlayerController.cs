@@ -10,10 +10,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             player.velocity = new Vector2(-5, player.velocity.y);
+            transform.localScale = new Vector2(-1,1);
         }
         if (Input.GetKey(KeyCode.D))
         {
             player.velocity = new Vector2(5, player.velocity.y);
+            transform.localScale = new Vector2(1, 1);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
